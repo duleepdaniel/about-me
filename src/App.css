@@ -37,7 +37,7 @@
 }
 @keyframes logo-container-spin {
   0% {left: 0%; top:0%;}
-  100% {left: 80%; top:0%;}
+  100% {left: calc(100% - 50px); top:0%;}
 }
 @media (max-width: 979px) {
   .App-header {
