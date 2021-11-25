@@ -1,0 +1,25 @@
+.logo {
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+}
+.logo-container {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation: logo-container-spin 15s linear 1s infinite forwards;
+}
+.navbar{
+    background-color: #107869;
+}
+.gradient-custom {
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+@keyframes logo-container-spin {
+    0% {left: 0%; top:0%;}
+    49% {transform: rotateY(0deg);}
+    50% {left: calc(100% - 40px); top:0%; transform: rotateY(180deg);}
+    99% {transform: rotateY(180deg);}
+    100% {left: 0%; top:0%; transform: rotateY(0deg);}
+}

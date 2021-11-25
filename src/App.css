@@ -5,17 +5,6 @@
   width: 100%;
   max-width: 80%;
 }
-.logo{
-  width: 40px;
-  height: 40px;
-  transform: rotate(45deg);
-}
-.logo-container{
-  width: 40px;
-  height: 40px;
-  position: relative;
-  animation: logo-container-spin 4s linear 1s infinite alternate;
-}
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
 }
@@ -35,10 +24,7 @@
 .App-link {
   color: #61dafb;
 }
-@keyframes logo-container-spin {
-  0% {left: 0%; top:0%;}
-  100% {left: calc(100% - 50px); top:0%;}
-}
+
 @media (max-width: 979px) {
   .App-header {
     padding-top: 0px;
