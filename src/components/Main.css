@@ -4,13 +4,14 @@
   align-items: center;
 }
 p.context{
-  font-size: calc(10px + 2vmin);
-  font-weight: bolder;
-}
-p.sub_context{
-  font-size: calc(10px + 1vmin);
+  font-size: calc(10px + 4vmin);
   font-weight: bold;
 }
-.btn-lng{
-  width: 100%;
+p.sub_context{
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+}
+p.sub_sub_context{
+  font-size: calc(10px + 1vmin);
+  font-weight: normal;
 }

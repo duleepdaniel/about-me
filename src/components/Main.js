@@ -16,16 +16,20 @@ const Main = () => {
             loop
             style={{color: "green"}}
             /> <br/>
-            From INDIA. <br /> You can find me on <br />
+            From INDIA. 
+            <br /> 
+            <br />
+            <p className='sub_context'>You can find me on <br /> </p>
           </p>
-          <Button href='https://github.com/duleepdaniel' target="_blank" variant="outline-primary" size="lg" className='col-lg-3 col-12 mb-2'>
-            GitHub
+          <Button href='https://github.com/duleepdaniel' target="_blank" variant="dark" size="lg" className='col-lg-2 col-12 mb-2'>
+            <img src='github.png' style={{width: 30, alignItems: 'center'}} /> &nbsp; GitHub
           </Button>{' '}
-          <Button href='https://in.linkedin.com/in/duleep-panthagani-a15b53158' target="_blank" variant="success" size="lg" className='col-lg-3 col-12 mb-2'>
-            LinkedIn
+          <Button href='https://in.linkedin.com/in/duleep-panthagani-a15b53158' target="_blank" 
+            variant="outline-secondary" size="lg" className='col-lg-2 col-12 mb-2' style={{fontWeight: "bold"}}>
+            <img src='Linkedin.png' style={{width: 30, alignItems: 'center'}} /> &nbsp; LinkedIN
           </Button>
           <br />
-          <p className='sub_context'>
+          <p className='sub_sub_context'>
             Hit me up if you want to talk about Coding or Video Games over Coffee, of course:)
           </p>
         </Col>
