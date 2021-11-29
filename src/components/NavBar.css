@@ -13,7 +13,9 @@
     background-color: #107869;
 }
 .gradient-custom {
-    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    background: linear-gradient(45deg, #0d47a1, #2196f3, #7b1fa2, #4a148c);
+    background-size: 250% 250%;
+	animation: gradient-custon-animate 15s infinite forwards;
 }
 
 @keyframes logo-container-spin {
@@ -22,4 +24,10 @@
     50% {left: calc(100% - 40px); top:0%; transform: rotateY(180deg);}
     99% {transform: rotateY(180deg);}
     100% {left: 0%; top:0%; transform: rotateY(0deg);}
+}
+
+@keyframes gradient-custon-animate {
+	0% { background-position: 100% 100%;}
+	50% { background-position: 0% 0%; }
+	100% { background-position: 100% 100%; }
 }

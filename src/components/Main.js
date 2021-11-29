@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from 'react-typed';
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import ButtonComponent from "./Button";
 import './Main.css'
 const Main = () => {
   return(
@@ -11,23 +12,20 @@ const Main = () => {
             Hi! I am Duleep Panthagani a <br />
             <Typed
             strings={["Web Developer", "Software Engineer", "Gamer "]}
-            typeSpeed={70}
+            typeSpeed={100}
             backSpeed={50}
             loop
-            style={{color: "green"}}
+            style={{color: '#009357'}}
             /> <br/>
             From INDIA. 
-            <br /> 
-            <br />
-            <p className='sub_context'>You can find me on <br /> </p>
+            <p className='sub_context mt-4 mb-3'>You can Find me on <br /></p>
           </p>
-          <Button href='https://github.com/duleepdaniel' target="_blank" variant="dark" size="lg" className='col-lg-2 col-12 mb-2'>
-            <img src='github.png' style={{width: 30, alignItems: 'center'}} /> &nbsp; GitHub
-          </Button>{' '}
-          <Button href='https://in.linkedin.com/in/duleep-panthagani-a15b53158' target="_blank" 
-            variant="outline-secondary" size="lg" className='col-lg-2 col-12 mb-2' style={{fontWeight: "bold"}}>
-            <img src='Linkedin.png' style={{width: 30, alignItems: 'center'}} /> &nbsp; LinkedIN
-          </Button>
+          <ButtonComponent href='https://github.com/duleepdaniel'
+            variant='dark' size='lg' className='col-lg-2 col-8 mb-2' style={{fontWeight: "bold"}}
+            img={{src: 'github.png', style: {width: 30, alignItems: 'center'}, alt: 'github'}} text='Github'/>{' '}
+          <ButtonComponent href='https://in.linkedin.com/in/duleep-panthagani-a15b53158'
+            variant='outline-secondary' size='lg' className='col-lg-2 col-8 mb-2' style={{fontWeight: "bold"}}
+            img={{src: 'Linkedin.png', style: {width: 30, alignItems: 'center'}, alt: 'linkedin'}} text='LinkedIN'/>
           <br />
           <p className='sub_sub_context'>
             Hit me up if you want to talk about Coding or Video Games over Coffee, of course:)
