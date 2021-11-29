@@ -1,15 +1,23 @@
 .container.context{
   justify-content: center;
   align-items: center;
+  color: #2D3748;
+}
+
+p.hello{
+  font-style: oblique;
+  font-size: calc(12px + 5vmin);
+  font-weight: bold;
 }
 p.context{
   font-size: calc(10px + 4vmin);
   font-weight: bold;
-  color: #2D3748;
 }
 p.sub_context{
   font-size: calc(10px + 2vmin);
+  font-weight: 600;
 }
 p.sub_sub_context{
   font-size: calc(15px);
+  font-weight: 500;
 }
