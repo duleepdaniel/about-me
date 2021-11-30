@@ -8,27 +8,27 @@ const Main = () => {
     <Container className='context'>
       <Row>
         <Col xs={12} lg={12}>
-          <p className='hello'>ℌ𝔢𝔩𝔩𝔬!</p>
           <p className='context'>
-            I am Duleep Panthagani a <br />
+            Hello, <br />I am Duleep Panthagani a <br />
             <Typed
             strings={["Full Stack Developer", "Software Engineer", "Gamer"]}
             typeSpeed={90}
             backSpeed={50}
             loop
-            style={{color: '#009357'}}
+            style={{color: 'green'}}
             /> <br/>
             From INDIA. 
             </p>
             <div className='fixed-bottom'>
               <p className='sub_context pb-2'>You can Find me on</p>
-              <ButtonComponent href='https://github.com/duleepdaniel'
-                variant='dark' size='lg' className='mb-2' style={{fontWeight: "bold"}}
+              <ButtonComponent href='https://github.com/duleepdaniel' className='mb-2 col-lg-2'
+                variant='dark' size='lg' style={{fontWeight: "bold"}} text='&nbsp;Github'
                 img={{src: 'github.png', style: {width: 30, alignItems: 'center'}, alt: 'github'}} />{' '}
-              <ButtonComponent href='https://in.linkedin.com/in/duleep-panthagani-a15b53158'
-                variant='outline-dark' size='lg' className='mb-2' style={{fontWeight: "bold"}}
+              <ButtonComponent href='https://in.linkedin.com/in/duleep-panthagani-a15b53158' className='mb-2 col-lg-2'
+                variant='outline-dark' size='lg' style={{fontWeight: "bold"}} text='&nbsp;LinkedIN'
                 img={{src: 'Linkedin.png', style: {width: 30, alignItems: 'center'}, alt: 'linkedin'}}/>{' '}
-              <ButtonComponent href='https://wa.me/+919110317308' variant='success' size='lg' className='mb-2' style={{fontWeight: "bold"}}
+              <ButtonComponent href='https://wa.me/+919110317308' className='mb-2 col-lg-2'
+                variant='success' size='lg' style={{fontWeight: "bold"}} text='&nbsp;WhatsApp'
                 img={{src: 'whatsapp.png', alt: 'whatsapp', style: {width: 30, alignItems: 'center'}}} /> 
               <br />
               <p className='sub_sub_context pt-2'>

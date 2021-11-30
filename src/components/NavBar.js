@@ -8,7 +8,7 @@ const NavBar = () => {
       <Navbar variant="dark" fixed="top" className='gradient-custom'>
         <div className='logo-container'>
           <Navbar.Brand href="/">
-            {/*<img alt='Nav-logo' src='startup.png' className='logo' />*/}
+            <img alt='Nav-logo' src='startup.png' className='logo' />
           </Navbar.Brand>
         </div>
       </Navbar>
