@@ -1,13 +1,14 @@
 import React from "react";
 import Typed from 'react-typed';
 import { Container, Row, Col } from "react-bootstrap";
-import ButtonComponent from "./Button";
+import Spear from "./Spear";
+//import ButtonComponent from "./Button";
 import './Main.css'
 const Main = () => {
   return(
     <Container className='context'>
       <Row>
-        <Col xs={12} lg={12}>
+        <Col xs={12} lg={6}>
           <p className='context'>
             Hello, <br />I am Duleep Panthagani a <br />
             <Typed
@@ -19,7 +20,7 @@ const Main = () => {
             /> <br/>
             From INDIA. 
             </p>
-            <div className='fixed-bottom'>
+            {/*<div className='fixed-bottom'>
               <p className='sub_context pb-2'>You can Find me on</p>
               <ButtonComponent href='https://github.com/duleepdaniel' className='mb-2 col-lg-2'
                 variant='dark' size='lg' style={{fontWeight: "bold"}} text='&nbsp;Github'
@@ -34,7 +35,10 @@ const Main = () => {
               <p className='sub_sub_context pt-2'>
                 Hit me up if you want to talk about Coding or Video Games. Over Coffee, of course :)
               </p>
-            </div>
+            </div>*/}
+        </Col>
+        <Col>
+          <Spear />
         </Col>
       </Row>
     </Container>
