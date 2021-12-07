@@ -10,7 +10,7 @@
 }
 
 .App-header {
-  background-color: rgb(247, 249, 252);
+  background-color: #282828;
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -29,4 +29,8 @@
   .App-header {
     padding-top: 0px;
   }
+}
+@font-face {
+  font-family: 'Polya';
+  src: local('Polya'), url(./Fonts/polya-regular.regular.otf) format('opentype');
 }

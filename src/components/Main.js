@@ -1,44 +1,89 @@
 import React from "react";
-import Typed from 'react-typed';
+import Particles from "react-tsparticles";
 import { Container, Row, Col } from "react-bootstrap";
-import Spear from "./Spear";
-//import ButtonComponent from "./Button";
-import './Main.css'
+import './Main.css';
+import Typed from 'react-typed';
+
 const Main = () => {
+  const particlesInit = (main) => {};
+  const particlesLoaded = (container) => {};
   return(
-    <Container className='context'>
+    <Container fluid >
       <Row>
-        <Col xs={12} lg={6}>
-          <p className='context'>
-            Hello, <br />I am Duleep Panthagani a <br />
-            <Typed
-            strings={["Full Stack Developer", "Software Engineer", "Gamer"]}
-            typeSpeed={90}
-            backSpeed={50}
-            loop
-            style={{color: 'green'}}
-            /> <br/>
-            From INDIA. 
-            </p>
-            {/*<div className='fixed-bottom'>
-              <p className='sub_context pb-2'>You can Find me on</p>
-              <ButtonComponent href='https://github.com/duleepdaniel' className='mb-2 col-lg-2'
-                variant='dark' size='lg' style={{fontWeight: "bold"}} text='&nbsp;Github'
-                img={{src: 'github.png', style: {width: 30, alignItems: 'center'}, alt: 'github'}} />{' '}
-              <ButtonComponent href='https://in.linkedin.com/in/duleep-panthagani-a15b53158' className='mb-2 col-lg-2'
-                variant='outline-dark' size='lg' style={{fontWeight: "bold"}} text='&nbsp;LinkedIN'
-                img={{src: 'Linkedin.png', style: {width: 30, alignItems: 'center'}, alt: 'linkedin'}}/>{' '}
-              <ButtonComponent href='https://wa.me/+919110317308' className='mb-2 col-lg-2'
-                variant='success' size='lg' style={{fontWeight: "bold"}} text='&nbsp;WhatsApp'
-                img={{src: 'whatsapp.png', alt: 'whatsapp', style: {width: 30, alignItems: 'center'}}} /> 
-              <br />
-              <p className='sub_sub_context pt-2'>
-                Hit me up if you want to talk about Coding or Video Games. Over Coffee, of course :)
-              </p>
-            </div>*/}
-        </Col>
-        <Col>
-          <Spear />
+        <Col lg={12}>
+          <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            height={'100vh'}
+            options={{
+              background: { color: { value: "#0d0d0d"}},
+              fpsLimit: 70,
+              interactivity: {
+                events: {
+                  onHover: { enable: true, mode: 'grab'},
+                  resize: true,
+                },
+                modes: {
+                  bubble: {
+                    distance: 400,
+                    duration: 2,
+                    opacity: 0.8,
+                    size: 40,
+                  },
+                  push: { quantity: 4,},
+                  repulse: { distance: 200, duration: 0.4,},
+                },
+              },
+              particles: {
+                color: {
+                  value: "#0000e6",
+                },
+                links: {
+                  color: "#00e600",
+                  distance: 100,
+                  enable: true,
+                  opacity: 0.5,
+                  width: 1,
+                },
+                collisions: {
+                  enable: true,
+                },
+                move: {
+                  direction: "none",
+                  enable: true,
+                  outMode: "bounce",
+                  random: true,
+                  speed: 4,
+                  straight: false,
+                },
+                number: {
+                  density: {
+                    enable: true,
+                    value_area: 600,
+                  },
+                  value: 120,
+                },
+                opacity: {
+                  value: 0.5,
+                },
+                shape: {
+                  type: "circle",
+                },
+                size: {
+                  random: true,
+                  value: 5,
+                },
+              },
+              detectRetina: true,
+            }}
+          />
+          <p className=' d-flex justify-content-center align-items-end polya-lg'>Hello!</p>
+          <p className=' d-flex justify-content-center align-items-end polya-sm'> I am Duleep Panthagani</p>
+          <p className=' d-flex justify-content-center align-items-start polya'>
+            A &nbsp; <Typed strings={["Web Developer", "Full Stack Dev", "Software Engineer", "Gamer"]}
+              typeSpeed={100} backSpeed={50} loop style={{color: 'red'}} />
+          </p>
         </Col>
       </Row>
     </Container>

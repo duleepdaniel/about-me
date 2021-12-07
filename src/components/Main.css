@@ -1,7 +1,6 @@
 .container.context{
   justify-content: center;
   align-items: center;
-  color: #2D3748;
 }
 
 p.context{
@@ -15,4 +14,38 @@ p.sub_context{
 p.sub_sub_context{
   font-size: calc(15px);
   font-weight: 500;
+}
+
+.row{
+  min-height: 100vh;
+}
+.h100{
+  height: 100%;
+}
+.polya{
+  height: 30%;
+  font-size: calc(3vw + 3vh + 2vmin);
+  font-family: Polya;
+  position: relative;
+  color: white;
+  justify-content: center;
+}
+.polya-lg{
+  height: 30%;
+  font-size: calc(4vw + 4vh + 3vmin);
+  font-family: Polya;
+  position: relative;
+  color: white;
+  justify-content: center;
+}
+.polya-sm{
+  height: 30%;
+  font-size: calc(3vw + 3vh + 2vmin);
+  font-family: Polya;
+  position: relative;
+  color: white;
+  justify-content: center;
+}
+canvas{
+  position: absolute !important;
 }
