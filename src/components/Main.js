@@ -26,7 +26,7 @@ const Main = () => {
                 },
                 modes: {
                   bubble: {
-                    distance: 400,
+                    distance: 300,
                     duration: 2,
                     opacity: 0.8,
                     size: 40,
@@ -37,13 +37,14 @@ const Main = () => {
               },
               particles: {
                 color: {
-                  value: "#0000e6",
+                  value: "random",
+                  random: true
                 },
                 links: {
-                  color: "#00e600",
+                  color: 'random',
                   distance: 100,
                   enable: true,
-                  opacity: 0.5,
+                  opacity: 1,
                   width: 1,
                 },
                 collisions: {

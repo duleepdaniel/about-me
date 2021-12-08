@@ -3,6 +3,7 @@ import "./App.css"
 //import NavBar from "./components/NavBar"
 import Skills from "./components/Skills"
 import Main from "./components/Main"
+import Contact from "./components/Contact"
 class App extends Component {
   render() {
     return (
@@ -10,6 +11,7 @@ class App extends Component {
         {/*<NavBar />*/}
         <Main />
         <Skills />
+        <Contact />
       </div>
     )
   }
