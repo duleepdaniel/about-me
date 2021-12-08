@@ -80,7 +80,7 @@ const Main = () => {
             }}
           />
           <p className=' d-flex justify-content-center align-items-end polya-lg'>Hello!</p>
-          <p className=' d-flex justify-content-center align-items-end polya-sm'> I am Duleep Panthagani</p>
+          <p className=' d-flex justify-content-center align-items-center polya-md'>I am Duleep Panthagani</p>
           <p className=' d-flex justify-content-center align-items-start polya'>
             A &nbsp; <Typed strings={["Web Developer", "Full Stack Dev", "Software Engineer", "Gamer"]}
               typeSpeed={100} backSpeed={50} loop style={{color: 'red'}} />

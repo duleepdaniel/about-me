@@ -11,7 +11,7 @@ class App extends Component {
         {/*<NavBar />*/}
         <Main />
         <Skills />
-        <Contact />
+        {/*<Contact />*/}
       </div>
     )
   }
