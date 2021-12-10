@@ -27,6 +27,7 @@ p.sub_sub_context{
   position: relative;
   color: white;
   justify-content: center;
+  font-weight: 580;
 }
 .polya-lg{
   height: 30%;
@@ -35,6 +36,7 @@ p.sub_sub_context{
   position: relative;
   color: white;
   justify-content: center;
+  font-weight: 580;
 }
 .polya-md{
   height: 30%;
@@ -43,6 +45,7 @@ p.sub_sub_context{
   position: relative;
   color: white;
   justify-content: center;
+  font-weight: 580;
 }
 canvas{
   position: absolute !important;
@@ -63,12 +66,17 @@ canvas{
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 979px) {
+@media (max-width: 768px) {
   .polya{
     font-size: calc(1vw + 3vh);
+    font-weight: 600;
   }
   .polya-md{
-    font-size: calc(2vw + 2vh + 1vmin);
+    font-size: calc(1vw + 2vh + 1vmin);
+    font-weight: 600;
+  }
+  .polya-lg{
+    font-weight: 600;
   }
   .tagcloud{
     font-size: 15px;
