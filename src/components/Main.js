@@ -17,8 +17,8 @@ const Main = () => {
             loaded={particlesLoaded}
             height={'100vh'}
             options={{
-              background: { color: { value: "#0d0d0d"}},
-              fpsLimit: 70,
+              background: { color: { value: "#080808"}},
+              fpsLimit: 200,
               interactivity: {
                 events: {
                   onHover: { enable: true, mode: 'grab'},
@@ -44,8 +44,12 @@ const Main = () => {
                   color: 'random',
                   distance: 100,
                   enable: true,
-                  opacity: 1,
-                  width: 1,
+                  opacity: 2,
+                  width: 1.5,
+                  triangles: {
+                    enable: true,
+                    opacity: 0.03
+                  }
                 },
                 collisions: {
                   enable: true,
@@ -59,21 +63,17 @@ const Main = () => {
                   straight: false,
                 },
                 number: {
-                  density: {
-                    enable: true,
-                    value_area: 600,
-                  },
-                  value: 120,
+                  value: 100,
                 },
                 opacity: {
                   value: 0.5,
                 },
                 shape: {
-                  type: "circle",
+                  type: ["circle","polygon","triangle"]
                 },
                 size: {
                   random: true,
-                  value: 5,
+                  value: 10,
                 },
               },
               detectRetina: true,

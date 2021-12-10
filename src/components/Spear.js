@@ -3,7 +3,7 @@ const TagCloud = require('TagCloud');
 const container = '.tagcloud';
 
 const Spear = () => {
-  const texts = [ "Ruby", "HTML", "CSS", "JS", "AJAX", "Heroku", "React JS", "Rails", "PostgreSQL", "MySQL", "SASS", "Rest", "GraphQL", "AWS", "Jquery" ];
+  const texts = [ "Ruby", "HTML", "CSS", "JS", "AJAX", "Heroku", "React JS", "Rails", "PostgreSQL", "MySQL", "SASS", "Rest", "GraphQL", "AWS", "Jquery", "BootStrap", "Node", "Docker" ];
   const style={
     color: '#08fdd8', fontWeight: 'bold', fontFamily: 'cursive'
   }
