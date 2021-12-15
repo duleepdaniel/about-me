@@ -1,18 +1,14 @@
 import React, { Component } from "react"
-import "./App.css"
 import Skills from "./components/Skills"
 import Main from "./components/Main"
 import Contact from "./components/Contact"
+// CSS
+import "./App.css"
+import 'animate.css/animate.min.css';
 class App extends Component {
-  componentDidMount() {
-    setTimeout(() => {
-      window.scrollTo(0, 800)
-    }, 3000);
-  }
   render() {
     return (
       <div>
-        {/*<NavBar />*/}
         <Main />
         <Skills />
         <Contact />
