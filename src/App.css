@@ -34,3 +34,11 @@
   font-family: 'Polya';
   src: local('Polya'), url(./Fonts/polya-regular.regular.otf) format('opentype');
 }
+@font-face {
+  font-family: 's-square';
+  src: local('s-square'), url(./Fonts/ST-SimpleSquare.otf) format('opentype');
+}
+@font-face {
+  font-family: 'pristine';
+  src: local('pristine'), url(./Fonts/Pristine-Script.ttf) format('opentype');
+}

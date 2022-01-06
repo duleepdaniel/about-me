@@ -20,32 +20,29 @@ p.sub_sub_context{
 .h100{
   height: 100%;
 }
-.polya{
-  height: 30%;
-  font-size: calc(3vw + 3vh + 2vmin);
-  font-family: Polya;
-  position: relative;
-  color: white;
-  justify-content: center;
-  font-weight: 580;
-}
-.polya-lg{
+.font-lg{
   height: 30%;
   font-size: calc(4vw + 4vh + 3vmin);
-  font-family: Polya;
+  font-family: polya;
   position: relative;
   color: white;
   justify-content: center;
-  font-weight: 580;
 }
-.polya-md{
+.font-md{
+  height: 30%;
+  font-size: calc(7vw + 3vh + 2vmin);
+  font-family: pristine;
+  position: relative;
+  color: white;
+  justify-content: center;
+}
+.font{
   height: 30%;
   font-size: calc(3vw + 3vh + 2vmin);
-  font-family: Polya;
+  font-family: s-square;
   position: relative;
   color: white;
   justify-content: center;
-  font-weight: 580;
 }
 canvas{
   position: absolute !important;
@@ -67,16 +64,14 @@ canvas{
 }
 
 @media (max-width: 768px) {
-  .polya{
-    font-size: calc(1vw + 3vh);
-    font-weight: 600;
+  .font{
+    font-size: calc(2vw + 2vh + 1vmin);
   }
-  .polya-md{
-    font-size: calc(1vw + 2vh + 1vmin);
-    font-weight: 600;
+  .font-md{
+    font-size: calc(6vw + 2vh + 1vmin);
   }
-  .polya-lg{
-    font-weight: 600;
+  .font-lg{
+    font-size: calc(3vw + 3vh + 2vmin);
   }
   .tagcloud{
     font-size: 15px;

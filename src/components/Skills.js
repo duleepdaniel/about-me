@@ -38,9 +38,9 @@ const ProgressBar = ({ label, backgroundColor = "#e5e5e5", visualParts = [ { per
 const Skills = () => {
     return(
       <Container fluid className='pt-0 mt-0 h-100'style={{color: 'white', backgroundColor: '#0d0d0d'}}>
-        <ScrollAnimation animateIn="fadeInUp" duration={1}>
-          <Row>
-            <Col xs={12} lg={6} className='d-flex align-items-center justify-content-center'>
+        <Row>
+          <Col xs={12} lg={6} className='d-flex align-items-center justify-content-center'>
+            <ScrollAnimation animateIn="fadeInLeft" duration={1}>
               <div>
                 <p className='context'>I am a Web Developer based from INDIA</p><br />
                 <p className='sub_context'>My Top Skills are</p>
@@ -57,12 +57,14 @@ const Skills = () => {
                   visualParts={[ { percentage: "75%", color: "DarkMagenta" } ]}
                 />
               </div>
-            </Col>
-            <Col xs={12} lg={6} className='d-flex align-items-center justify-content-center'>
+            </ScrollAnimation>
+          </Col>
+          <Col xs={12} lg={6} className='d-flex align-items-center justify-content-center'>
+            <ScrollAnimation animateIn="fadeInRight" duration={1}>
               <Spear />
-            </Col>
-          </Row>
-        </ScrollAnimation>
+            </ScrollAnimation>
+          </Col>
+        </Row>
       </Container>
     )
 };
