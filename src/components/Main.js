@@ -37,19 +37,14 @@ const Main = () => {
               },
               particles: {
                 color: {
-                  value: "random",
-                  random: true
+                  value: "#F8F8FF"
                 },
                 links: {
                   color: 'random',
-                  distance: 100,
+                  distance: 80,
                   enable: true,
-                  opacity: 2,
-                  width: 1.5,
-                  triangles: {
-                    enable: true,
-                    opacity: 0.03
-                  }
+                  opacity: 1,
+                  width: 1.5
                 },
                 collisions: {
                   enable: true,
@@ -59,21 +54,21 @@ const Main = () => {
                   enable: true,
                   outMode: "bounce",
                   random: true,
-                  speed: 4,
+                  speed: 3,
                   straight: false,
                 },
                 number: {
-                  value: 100,
+                  value: 120,
                 },
                 opacity: {
-                  value: 0.5,
+                  value: 0.3,
                 },
                 shape: {
-                  type: ["circle","polygon","triangle"]
+                  type: []
                 },
                 size: {
                   random: true,
-                  value: 10,
+                  value: 15,
                 },
               },
               detectRetina: true,
