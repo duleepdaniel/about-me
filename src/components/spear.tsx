@@ -192,7 +192,7 @@ function TagSphere(props: any) {
   let radius = props.radius;
 
   if (!radius) {
-    radius = texts.length * 23;
+    radius = texts.length * 15;
   }
 
   const depth = 2 * radius;
