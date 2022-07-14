@@ -1,67 +1,37 @@
-import React, { useEffect, useState } from "react";
-import Spear from "./Spear";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ScrollAnimation from 'react-animate-on-scroll';
+import TagSphere from "./spear";
+import './skills.css';
 
 // css
 import './Main.css'
-
-const ProgressBar = ({ label, backgroundColor = "#e5e5e5", visualParts = [ { percentage: "100%", color: "white" } ]}) => {
-  const [widths, setWidths] = useState( visualParts.map(() => { return 0; }));
-  useEffect(() => {
-    requestAnimationFrame(() => {
-      setWidths(
-        visualParts.map(item => {
-          return item.percentage;
-        })
-      );
-    });
-  }, [visualParts]);
-
-  return (
-    <>
-      <div className="progressLabel">{label}</div>
-      <div className="progressVisualFull" style={{ backgroundColor }}>
-        {visualParts.map((item, index) => {
-          return (
-            <div key={index}
-              style={{ width: widths[index], backgroundColor: item.color }}
-              className="progressVisualPart"
-            />
-          );
-        })}
-      </div>
-    </>
-  );
-};
+const spearStyle={color: 'white', fontWeight: 'bold', fontFamily: 'cursive', foneSize: 'large'}
 
 const Skills = () => {
     return(
-      <Container fluid className='pt-0 mt-0 h-100'style={{color: 'white', backgroundColor: '#0d0d0d'}}>
+      <Container fluid className='pt-0 mt-0 h-100'style={{color: 'white', backgroundColor: '#0B0A0B'}}>
         <Row>
           <Col xs={12} lg={6} className='d-flex align-items-center justify-content-center'>
             <ScrollAnimation animateIn="fadeInLeft" duration={1}>
-              <div>
-                <p className='context'>I am a Web Developer based from INDIA</p><br />
-                <p className='sub_context'>My Top Skills are</p>
-                <ProgressBar label='HTML / CSS / JS' backgroundColor="white" 
-                  visualParts={[ { percentage: "95%", color: "limegreen" } ]}
-                />
-                <ProgressBar label='Ruby / Rails' backgroundColor="white" 
-                  visualParts={[ { percentage: "93%", color: "maroon" } ]}
-                />
-                <ProgressBar label='React JS' backgroundColor="white" 
-                  visualParts={[ { percentage: "85%", color: "deepskyblue" } ]}
-                />
-                <ProgressBar label='MySQL / PostgreSQL ' backgroundColor="white" 
-                  visualParts={[ { percentage: "75%", color: "DarkMagenta" } ]}
-                />
+              <div className="justify-content-center">
+                <div className="about-me">
+                  <p>
+                    About Me
+                  </p>
+                </div>
+                <div className='this-is-me'>
+                  <p>Hi, I'm Duleep, an Indian full-stack developer.</p>
+                  <p>I enjoy working on complex projects and learning from them, whether it's with a team or on my own.</p>
+                  <p>I love Ruby, JavaScript and Everything that is linked to Back End Developement, and right now I'm working as Full-stack Developer at <a href="https://www.annkissam.com/" rel="noreferrer" target="_blank">Annkissam</a>.</p>
+                  <p>I'm always interested in a challenge, so be sure to reach out to me if you have one.</p>
+                </div>
               </div>
             </ScrollAnimation>
           </Col>
           <Col xs={12} lg={6} className='d-flex align-items-center justify-content-center'>
-            <ScrollAnimation animateIn="fadeInRight" duration={1}>
-              <Spear />
+            <ScrollAnimation animateIn="fadeInRight" duration={3}>
+              <TagSphere style={spearStyle} keepRollingAfterMouseOut='false'/>
             </ScrollAnimation>
           </Col>
         </Row>
