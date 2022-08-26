@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Map from "./Map";
 const Contact = () => {
   return(
-    <Container fluid style={{color: 'white', backgroundColor: '#1d1d1d'}} >
+    <Container fluid style={{color: 'white', backgroundColor: '#040404'}} >
         <Row>
           <Col xs={12} lg={6} className='d-flex align-items-center justify-content-center text-center'>
             <div>

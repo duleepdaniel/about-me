@@ -17,7 +17,7 @@ const Main = () => {
             loaded={particlesLoaded}
             height={'100vh'}
             options={{
-              background: { color: { value: "#080808"}},
+              background: { color: { value: "#030203"}},
               fpsLimit: 200,
               interactivity: {
                 events: {
@@ -37,13 +37,13 @@ const Main = () => {
               },
               particles: {
                 color: {
-                  value: "#F8F8FF"
+                  value: "#BBC4C2"
                 },
                 links: {
                   color: 'random',
-                  distance: 80,
+                  distance: 100,
                   enable: true,
-                  opacity: 1,
+                  opacity: 1.5,
                   width: 1.5
                 },
                 collisions: {
@@ -78,7 +78,7 @@ const Main = () => {
           <p className=' d-flex justify-content-center align-items-center font-md'>I am Duleep Panthagani</p>
           <p className=' d-flex justify-content-center align-items-start font'>
             A &nbsp; <Typed strings={["Web Developer", "Full Stack Dev", "Software Engineer", "Gamer"]}
-              typeSpeed={100} backSpeed={50} loop style={{color: 'red'}} />
+              typeSpeed={100} backSpeed={50} loop style={{color: '#990000'}} />
           </p>
         </Col>
       </Row>
