@@ -42,3 +42,7 @@
   font-family: 'pristine';
   src: local('pristine'), url(./Fonts/Pristine-Script.ttf) format('opentype');
 }
+@font-face {
+  font-family: 'papyrus';
+  src: local('papyrus'), url(./Fonts/Papyrus.ttf) format('opentype');
+}
