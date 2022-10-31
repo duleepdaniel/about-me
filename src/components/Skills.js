@@ -23,7 +23,7 @@ const Skills = () => {
                 <div className='this-is-me'>
                   <p>Hi, I'm Duleep, an Indian full-stack developer.</p>
                   <p>I enjoy working on complex projects and learning from them, whether it's with a team or on my own.</p>
-                  <p>I love Ruby, JavaScript and Everything that is linked to Back End Developement, and right now I'm working as Full-stack Developer at <a href="https://www.annkissam.com/" rel="noreferrer" target="_blank">Annkissam</a>.</p>
+                  <p>I love Ruby, JavaScript and Everything that is linked to Back End Developement, and right now I'm working as Full-stack Developer at <a href="https://www.hhaexchange.com/" rel="noreferrer" target="_blank">HHAeXchange</a>.</p>
                   <p>I'm always interested in a challenge, so be sure to reach out to me if you have one.</p>
                 </div>
               </div>
