@@ -1,4 +1,3 @@
-## This is a Personal Website Deployed with Netlify
-  A Basic React App
-  -> https://duleep-panthagani.netlify.app/
+# This is a Personal Website
+- ### *Visit* -  https://duleep-panthagani.netlify.app/
 
